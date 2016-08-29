@@ -1,0 +1,72 @@
+/* Activates the use of a custom font. From fontsquirrel.com */
+@font-face {
+    font-family: 'bungee_regularregular';
+    src: url('bungee-regular-webfont.woff2') format('woff2'),
+         url('bungee-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    -webkit-touch-callout: none;                /* Prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* Prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* Prevent copy paste, to allow, change 'none' to 'text' */
+    background-color: #abcdef;					/* Basic app background-color defined. Should coordinate with the one in config.xml */
+    font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;	/* Sets basic Font Family */
+    font-size: 105%;
+}
+
+.ui-header .ui-title {						/* Style the Header Title */
+	font-family: 'bungee_regularregular';	/* Set the Font Family */
+	font-size: 125%;						/* Increase the Font Size */
+	margin: 0 20%;							/* Remove some of the extra paddingin the Header */
+}
+
+.ui-footer .ui-title {				/* style the Footer Title */
+	font-family: 'bungee_regularregular';
+}
+
+
+h2 {									/* Style the <h2> tags */
+	font-family: 'bungee_regularregular';
+}
+
+.ui-dialog-contain>.ui-content {		/* Style the "ui-content" class if it's a direct descendant of the "ui-dialog-conain" class */
+	background-color: white;
+	
+}
+
+.ui-dialog-contain>.ui-content h2 {	/* Style the <h2> tag in the "ui-content" class, if it's a direct descendant of the "ui-dialog-contain" class */
+	margin-top: 5%;					/* Tighten up some of the Margins */
+	margin-bottom: 2%;
+}
+
+.ui-icon-myicon:after {				/* Set up a custom jQuery Mobile icon */
+	background-image: url("images/vmcampos-instagram_2529-72.jpg");
+	background-size: 100% 100%;
+}
+
+.ui-nosvg .ui-icon-myicon:after {	/* Set up a custom jQuery Mobile icon, the "nosvg" version */
+	background-image: url("images/vmcampos-instagram_2529-72.jpg");
+	background-size: 100% 100%;
+}
+
+.divImgFull {					/* Style a <div> that holds an <img> */
+	width: 100%; 				/* Make the <div> full-width */
+	position: relative; 		/* Position relative to the parent container */
+	background-color: white;	/* Background color set to white */
+	border: 5px solid white;	/* Add a 5-pixel size border, solid style, and white */
+	line-height: 0;				/* Zero out the Line Height to tighten the space */
+	border-radius: 25px;		/* Add a 25-pixel roundness to the <div> */
+	overflow: hidden;			/* Hide any content that extends beyond the <div> */
+}
+
+.imgFull { width: 100%; }			/* Make sure the <img> is 100% of the size of its container */
+
+/*
+	Author:		Victor Campos <vcampos@sdccd.edu>
+	Project:	mySDCE
+	Version:	1.0.20160707
+	Date:		2016-07-07
+	Description:The unoffical San Diego Continuing Education app.
+*/
